@@ -1,0 +1,180 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+
+#map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#pac-input {
+  background-color: #094464;
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+  max-width: 80%;
+  margin-top: 20px;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: -95px;
+  margin-top: 64px;
+}
+
+#pac-input:focus {
+  outline: none;
+}
+
+#title {
+  color: #fff;
+  background-color: tomato;
+  font-size: 25px;
+  padding: 6px 12px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 5px;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-weight: 100;
+}
+
+footer.page-footer {
+  background-color: tomato;
+  font-family: 'Pompiere', cursive;
+  border-top: 5px solid white;
+}
+
+footer li {
+  border: none;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.light, .page-footer .footer-copyright {
+  text-align: center;
+}
+
+#push-in {
+  background-color: tomato;
+  color: white;
+  position: absolute;
+  top: 4%;
+  left: 7%;
+  opacity: .6;
+}
+
+
+#push-out {
+  background-color: tomato;
+  color: white;
+  position: absolute;
+  bottom: 25px;
+  left: 70%;
+  opacity: .6;
+}
+
+@media(min-width: 1024px){
+  #push-out{
+    left: 90%;
+  }
+}
+
+
+.button-collapse:hover {
+  opacity: 1;
+  background-color: tomato;
+}
+
+#slide-out {
+  background-color: #094464;
+  color: white;
+  text-align: center;
+  border-left: 5px solid white;
+  font-family: 'Lato', sans-serif;
+}
+
+#slide-out li {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  border-bottom: 1px solid white;
+  margin: 10px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  #slide-out {
+    width: 100% !important;
+    height: 50%;
+    margin-top: 100%;
+    border-left: none;
+    border-top: 5px solid white;
+    font-weight: bold;
+  }
+}
+
+#sidenav-overlay {
+  opacity: 0 !important;
+}
+
+.sidebar-header h5 {
+  color: Tomato;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+.row input {
+  background-color: tomato;
+  justify-content: space-between;
+  color: white;
+  border-radius: 3px;
+  opacity: .5;
+  transition: .25s;
+}
+
+.heart {
+  display: inline-block;
+  font-size: 30px;
+  color: tomato;
+}
+
+#country {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#country:after {
+  content: ' \2606';
+  color: rgb(255, 203, 0);
+  cursor: pointer;
+}
+
+#country.fav:after {
+  content: ' \2605';
+}
+
+#your-favs li {
+  cursor: pointer;
+}
